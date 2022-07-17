@@ -44,25 +44,25 @@
 {%endif %}
 
 <!-- Twitter Card data -->
-<!-- <meta name="twitter:card" content="summary_large_image" /> -->
+<meta name="twitter:card" content="summary_large_image" />
 
-<!-- {%if site.twitter.site %} -->
-<!--   <meta name="twitter:site" content="@{{ site.twitter.site }}" /> -->
-<!-- {%endif %} -->
+{%if site.twitter.site %}
+  <meta name="twitter:site" content="@{{ site.twitter.site }}" />
+{%endif %}
 
-<!-- <meta name="twitter:title" content="{{ page_title }}" /> -->
-<!-- <meta name="twitter:description" content="{{ page_description }}" /> -->
+<meta name="twitter:title" content="{{ page_title }}" />
+<meta name="twitter:description" content="{{ page_description }}" />
 
-<!-- {%if twitter_creator %} -->
-<!--   <meta name="twitter:creator" content="@{{ twitter_creator }}" /> -->
-<!-- {%endif %} -->
+{%if twitter_creator %}
+  <meta name="twitter:creator" content="@{{ twitter_creator }}" />
+{%endif %}
 
 <!-- Twitter summary card with large image must be at least 280x150px -->
-<!-- {%if page_image %} -->
-<!--   <meta name="twitter:image:src" content="{{ page_image }}" /> -->
-<!--   <meta name="twitter:image" content="{{ page_image }}" /> -->
-<!-- {%endif %} -->
-<!-- <meta name="twitter:url" content="{{ canonical_url }}" /> -->
+{%if page_image %}
+  <meta name="twitter:image:src" content="{{ page_image }}" />
+  <meta name="twitter:image" content="{{ page_image }}" />
+{%endif %}
+<meta name="twitter:url" content="{{ canonical_url }}" />
 
 <!-- Open Graph data -->
 <meta property="og:title" content="{{ page_title }}" />
