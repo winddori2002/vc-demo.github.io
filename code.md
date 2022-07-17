@@ -2,7 +2,7 @@
 layout: page
 title: Code
 tagline: A few more words about this theme
-permalink: /about.html
+permalink: /code.html
 ref: code
 order: 0
 ---
