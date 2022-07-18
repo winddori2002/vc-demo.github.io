@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Code
 permalink: /code.html
@@ -10,3 +10,4 @@ The PyTorch implementation of the method is available on the source code reposit
 
 
 [Go to the Home Page]({{ '/' | absolute_url }})
+ -->
