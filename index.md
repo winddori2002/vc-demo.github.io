@@ -7,6 +7,3 @@
 #
 layout: home
 ---
-
-<!-- Above, we provide..
- -->
