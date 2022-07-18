@@ -6,7 +6,7 @@ ref: code
 order: 0
 ---
 
-The pytorch implementation of the method is available on the source code repositry at:
+The PyTorch implementation of the method is available on the source code repository at: TBA
 
 
 [Go to the Home Page]({{ '/' | absolute_url }})
