@@ -6,7 +6,7 @@ ref: paper
 order: 1
 ---
 
-The pytorch implementation of the method is available on the source code repositry at:
+You can find more detailed information from the paper.
 
 
 [Go to the Home Page]({{ '/' | absolute_url }})
