@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Code
-tagline: A few more words about this theme
 permalink: /code.html
 ref: code
 order: 0
