@@ -28,24 +28,24 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', '{{ site.google_analytics }}');
-        
-        function WriteToFile(passForm) {
 
-            set fso = CreateObject("Scripting.FileSystemObject"); 
-            set s   = fso.CreateTextFile("<your Path>/filename.txt", True);
+    </script>
+    
+    <script language="Javascript" >
+    function download(filename, text) {
+      var pom = document.createElement('a');
+      pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 
-            var firstName = document.getElementById('FirstName');
-            var lastName  = document.getElementById('lastName');
+    encodeURIComponent(text));
+      pom.setAttribute('download', filename);
 
-            s.writeline("First Name :" + FirstName);
-            s.writeline("Last Name :" + lastName);
+      pom.style.display = 'none';
+      document.body.appendChild(pom);
 
-            s.writeline("-----------------------------");
-            s.Close();
-         }
-        
-        
-        
+      pom.click();
+
+      document.body.removeChild(pom);
+    }
     </script>
     {% endif %}
     
