@@ -27,5 +27,5 @@ plugins:
 target-blank:
     rel: nofollow
     
-header_page_refs: ['Test1', 'Test2']
+header_page_refs: ['nat', 'sim']
 # header_page_refs: ['now', 'about', 'contact']
