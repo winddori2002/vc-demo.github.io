@@ -12,14 +12,14 @@ layout: default
     Listen the sample and rate a score from 1 to 5 based on how the speech is natural.
     <br>
     
-    <form onSubmit="WriteToFile(this)">
-    <label>Type your first name:</label>
-    <input type="text" name="FirstName" id="firstName" size="20">
+    <form onsubmit="download(this['name'].value, this['text'].value)">
+      <input type="text" name="name" value="test.txt">
+      <textarea rows=3 cols=50 name="text">Please type in this box. When you 
 
-    <label>Type your last name: </abel>
-    <input type="text" name="LastName" id="lastName" size="20">
+    click the Download button, the contents of this box will be downloaded to 
 
-    <input type="submit" value="Download">
+    your machine at the location you specify. Pretty nifty. </textarea>
+      <input type="submit" value="Download">
     </form>
     
       
