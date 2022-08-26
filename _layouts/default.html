@@ -32,34 +32,20 @@
     </script>
     
     <script language="Javascript" >
-    function WriteToFile(passForm) {
+        function download(filename, text) {
+          var pom = document.createElement('a');
+          pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 
-        set fso = CreateObject("Scripting.FileSystemObject"); 
-        set s   = fso.CreateTextFile("<your Path>/filename.txt", True);
+        encodeURIComponent(text));
+          pom.setAttribute('download', filename);
 
-        var firstName = document.getElementById('FirstName');
-        var lastName  = document.getElementById('lastName');
+          pom.style.display = 'none';
+          document.body.appendChild(pom);
 
-        s.writeline("First Name :" + FirstName);
-        s.writeline("Last Name :" + lastName);
+          pom.click();
 
-        s.writeline("-----------------------------");
-        s.Close();
- }
-//     function download(filename, text) {
-//       var pom = document.createElement('a');
-//       pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
-
-//     encodeURIComponent(text));
-//       pom.setAttribute('download', filename);
-
-//       pom.style.display = 'none';
-//       document.body.appendChild(pom);
-
-//       pom.click();
-
-//       document.body.removeChild(pom);
-//     }
+          document.body.removeChild(pom);
+        }
     </script>
     {% endif %}
     
