@@ -12,14 +12,20 @@ layout: default
     <br>
     
 
-    <form name="addtext" onsubmit="download(this['name'].value, this['text'].value)"> 
- 
-    <textarea rows="10" cols="70" name="text" placeholder="Type your text here:"></textarea> 
-    <br> 
-    <input type="text" name="name" value="" placeholder="File Name"> 
-    <input type="submit" onClick="addTexttxt();" value="Save As TXT"> 
- 
-    </form> 
+  <form name="myform" method="post" >
+    <input type="text" id="docname" value="test.txt" />
+    <input type="text" id="name" placeholder="Your Name" />
+    <div style="display:unblock">
+      Option 1 <input type="radio" value="Option 1" onclick="getElementById('problem').value=this.value; getElementById('problem').show()" style="display:inline" />
+      Option 2 <input type="radio" value="Option 2" onclick="getElementById('problem').value=this.value;" style="display:inline" />
+      <input type="text" id="problem" />
+    </div>
+    <textarea rows=3 cols=50 id="text" />Please type in this box. 
+  When you click the Download button, the contents of this box will be downloaded to your machine at the location you specify. Pretty nifty. </textarea>
+
+    <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
+
+  </form>
 
     
       
