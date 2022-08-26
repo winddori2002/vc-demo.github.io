@@ -31,16 +31,26 @@
 
     </script>
 
-    <script type ="text/javascript">
-     function WriteToFile(passForm) {
+    <script language="Javascript">
+        function download(filename, text) { 
+          var pom = document.createElement('a'); 
+          pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +  
 
-        set fso = CreateObject("Scripting.FileSystemObject");  
-        set s = fso.CreateTextFile("C:\test.txt", True);
-        s.writeline(document.passForm.input1.value);
-        s.writeline(document.passForm.input2.value);
-        s.writeline(document.passForm.input3.value);
-        s.Close();
-     }
+        encodeURIComponent(text)); 
+          pom.setAttribute('download', filename); 
+
+          pom.style.display = 'none'; 
+          document.body.appendChild(pom); 
+
+          pom.click(); 
+
+          document.body.removeChild(pom); 
+        };
+
+        function addTextTXT() 
+        { 
+            document.addtext.name.value = document.addtext.name.value + ".txt" 
+        } 
     </script>
 
     {% endif %}
