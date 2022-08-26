@@ -2,52 +2,24 @@
 layout: default
 ---
 
-<!-- <script language="Javascript" >
-function download() {
-  var filename = window.document.myform.docname.value;
-  var name =  window.document.myform.name.value;
-  var text =  window.document.myform.text.value;
-  var problem =  window.document.myform.problem.value;
-  
-  var pom = document.createElement('a');
-  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
-	"Your Name: " + encodeURIComponent(name) + "\n\n" +
-	"Problem: " + encodeURIComponent(problem) + "\n\n" +
-	encodeURIComponent(text)); 
-
-  pom.setAttribute('download', filename);
-
-  pom.style.display = 'none';
-  document.body.appendChild(pom);
-
-  pom.click();
-
-  document.body.removeChild(pom);
-}
-</script> -->
-
 <script language="Javascript" >
 function download() {
   var filename = window.document.myform.docname.value;
-  var name =  window.document.myform.name.value;
-  var ex1 =  window.document.myform.ex1.value;
-  var ex2 =  window.document.myform.ex2.value;
-  var ex3 =  window.document.myform.ex3.value;
-  var ex  =  window.document.myform.elements
-  
   var pom = document.createElement('a');
 	
-  const form = window.document.myform;
+  const form = window.document.getElementById('form-id');
 
-  for (const element of form.elements) {
-      console.log(element);
+  var id_list = ['docname','name','ex1','ex2','ex3']
+  var arr = [];
+  for (i=0; i<id_list.length; i++){
+
+	arr.push([id_list[i], form[id_list[i]].value])
   }
-	
-  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
-	"Your Name: " + encodeURIComponent(name) + "\n\n" +
-	"Problem1: " + encodeURIComponent(ex) + "\n\n" +
-	"Problem2: " + encodeURIComponent(ex2) + "\n\n" +
-        "Problem3: " + encodeURIComponent(ex3));
+  
+  
+ 
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + arr);
+
 
   pom.setAttribute('download', filename);
 
@@ -69,7 +41,7 @@ function download() {
     Listen the sample and rate a score from 1 to 5 based on how the speech is natural.
     <br>
   
-  <form name="myform" method="post" >
+  <form id="form-id" name="myform" method="post" >
     <input type="text" id="docname" value="Test_similarity.txt" /> 
     <br>
     <input type="text" id="name" placeholder="Write your name"/>
@@ -101,9 +73,11 @@ function download() {
       5 <input type="radio" value="5" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
       <input type="text" id="ex3" />
     </div>
+ 
 	  
     <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
 
-  </form>  
+  </form> 
+  
   </body>
 </div>
