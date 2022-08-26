@@ -33,11 +33,12 @@ function download() {
   var ex1 =  window.document.myform.ex1.value;
   var ex2 =  window.document.myform.ex2.value;
   var ex3 =  window.document.myform.ex3.value;
+  var ex  =  window.document.myform.elements
   
   var pom = document.createElement('a');
   pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 	"Your Name: " + encodeURIComponent(name) + "\n\n" +
-	"Problem1: " + encodeURIComponent(ex1) + "\n\n" +
+	"Problem1: " + encodeURIComponent(ex) + "\n\n" +
 	"Problem2: " + encodeURIComponent(ex2) + "\n\n" +
         "Problem3: " + encodeURIComponent(ex3));
 
