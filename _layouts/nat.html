@@ -30,12 +30,16 @@ function download() {
 function download() {
   var filename = window.document.myform.docname.value;
   var name =  window.document.myform.name.value;
-  var ex =  window.document.myform.ex.value;
+  var ex1 =  window.document.myform.ex1.value;
+  var ex2 =  window.document.myform.ex2.value;
+  var ex3 =  window.document.myform.ex3.value;
   
   var pom = document.createElement('a');
   pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 	"Your Name: " + encodeURIComponent(name) + "\n\n" +
-	"Problem: " + encodeURIComponent(ex));
+	"Problem1: " + encodeURIComponent(ex1) + "\n\n" +
+	"Problem2: " + encodeURIComponent(ex2) + "\n\n" +
+        "Problem3: " + encodeURIComponent(ex3));
 
   pom.setAttribute('download', filename);
 
@@ -64,13 +68,32 @@ function download() {
     <br>
 	  
     <div style="display:unblock">
-      1 <input type="radio" value="1" onclick="getElementById('ex').value=this.value; getElementById('ex').show()" style="display:inline" name="score" />
-      2 <input type="radio" value="2" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
-      3 <input type="radio" value="3" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
-      4 <input type="radio" value="4" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
-      5 <input type="radio" value="5" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
-      <input type="text" id="ex" />
+      1 <input type="radio" value="1" onclick="getElementById('ex1').value=this.value; getElementById('ex1').show()" style="display:inline" name="score" />
+      2 <input type="radio" value="2" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+      3 <input type="radio" value="3" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+      4 <input type="radio" value="4" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+      5 <input type="radio" value="5" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+      <input type="text" id="ex1" />
     </div>
+	  
+    <div style="display:unblock">
+      1 <input type="radio" value="1" onclick="getElementById('ex2').value=this.value; getElementById('ex2').show()" style="display:inline" name="score" />
+      2 <input type="radio" value="2" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+      3 <input type="radio" value="3" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+      4 <input type="radio" value="4" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+      5 <input type="radio" value="5" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+      <input type="text" id="ex2" />
+    </div>
+	  
+    <div style="display:unblock">
+      1 <input type="radio" value="1" onclick="getElementById('ex3').value=this.value; getElementById('ex3').show()" style="display:inline" name="score" />
+      2 <input type="radio" value="2" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+      3 <input type="radio" value="3" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+      4 <input type="radio" value="4" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+      5 <input type="radio" value="5" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+      <input type="text" id="ex3" />
+    </div>
+	  
     <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
 
   </form>  
