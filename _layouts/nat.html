@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+</style>
 <script language="Javascript" >
 function download() {
   var filename = window.document.myform.docname.value;
@@ -34,17 +40,18 @@ function download() {
     Below, we provide some examples for speech naturalness evaluation. <br>
     Listen the sample and rate a score from 1 to 5 based on how the speech is natural.
     <br>
-    
+  
   <form name="myform" method="post" >
-    <input type="text" id="docname" value="Test_similarity.txt" />
-    <input type="text" id="name" placeholder="Name"/>
+    Filename: <input type="text" id="docname" value="Test_similarity.txt" /> 
+    <br>
+    Name: <input type="text" id="name" placeholder="Write your name"/>
+    <br>
+	  
     <div style="display:unblock">
-      Option 1 <input type="radio" value="Option 1" onclick="getElementById('problem').value=this.value; getElementById('problem').show()" style="display:inline" />
-      Option 2 <input type="radio" value="Option 2" onclick="getElementById('problem').value=this.value;" style="display:inline" />
-      <input type="text" id="problem" />
+      Option 1 <input type="radio" value="1" onclick="getElementById('No.1').value=this.value; getElementById('No.1').show()" style="display:inline" />
+      Option 2 <input type="radio" value="2" onclick="getElementById('No.1').value=this.value;" style="display:inline" />
+      <input type="text" id="No.1" />
     </div>
-    <textarea rows=3 cols=50 id="text" />Please type in this box. 
-  When you click the Download button, the contents of this box will be downloaded to your machine at the location you specify. Pretty nifty. </textarea>
 
     <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
 
