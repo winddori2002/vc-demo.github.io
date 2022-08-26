@@ -36,6 +36,13 @@ function download() {
   var ex  =  window.document.myform.elements
   
   var pom = document.createElement('a');
+	
+  const form = window.document.myform;
+
+  for (const element of form.elements) {
+      console.log(element);
+  }
+	
   pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
 	"Your Name: " + encodeURIComponent(name) + "\n\n" +
 	"Problem1: " + encodeURIComponent(ex) + "\n\n" +
