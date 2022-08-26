@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<script language="Javascript" >
+<!-- <script language="Javascript" >
 function download() {
   var filename = window.document.myform.docname.value;
   var name =  window.document.myform.name.value;
@@ -14,6 +14,28 @@ function download() {
 	"Your Name: " + encodeURIComponent(name) + "\n\n" +
 	"Problem: " + encodeURIComponent(problem) + "\n\n" +
 	encodeURIComponent(text)); 
+
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script> -->
+
+<script language="Javascript" >
+function download() {
+  var filename = window.document.myform.docname.value;
+  var name =  window.document.myform.name.value;
+  var ex =  window.document.myform.ex.value;
+  
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+	"Your Name: " + encodeURIComponent(name) + "\n\n" +
+	"Problem: " + encodeURIComponent(ex);
 
   pom.setAttribute('download', filename);
 
@@ -42,12 +64,13 @@ function download() {
     <br>
 	  
     <div style="display:unblock">
-      1 <input type="radio" value="1" onclick="getElementById('problem').value=this.value; getElementById('problem').show()" style="display:inline" name="score" />
-      2 <input type="radio" value="2" onclick="getElementById('problem').value=this.value;" style="display:inline" name="score" />
-      <input type="text" id="problem" />
+      1 <input type="radio" value="1" onclick="getElementById('ex').value=this.value; getElementById('ex').show()" style="display:inline" name="score" />
+      2 <input type="radio" value="2" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
+      3 <input type="radio" value="3" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
+      4 <input type="radio" value="4" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
+      5 <input type="radio" value="5" onclick="getElementById('ex').value=this.value;" style="display:inline" name="score" />
+      <input type="text" id="ex" />
     </div>
-    <textarea rows=3 cols=50 id="text" />Please type in this box. 
-    When you click the Download button, the contents of this box will be downloaded to your machine at the location you specify. Pretty nifty. </textarea>
     <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
 
   </form>  
