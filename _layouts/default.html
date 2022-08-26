@@ -30,28 +30,30 @@
         gtag('config', '{{ site.google_analytics }}');
 
     </script>
+    <script language="Javascript" >
+    function download() {
+      var filename = window.document.myform.docname.value;
+      var name =  window.document.myform.name.value;
+      var text =  window.document.myform.text.value;
+      var problem =  window.document.myform.problem.value;
 
-    <script language="Javascript">
-        function download(filename, text) { 
-          var pom = document.createElement('a'); 
-          pom.setAttribute('href', 'data:text/plain;charset=utf-8,' +  
-
+      var pom = document.createElement('a');
+      pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+        "Your Name: " + encodeURIComponent(name) + "\n\n" +
+        "Problem: " + encodeURIComponent(problem) + "\n\n" +
         encodeURIComponent(text)); 
-          pom.setAttribute('download', filename); 
 
-          pom.style.display = 'none'; 
-          document.body.appendChild(pom); 
+      pom.setAttribute('download', filename);
 
-          pom.click(); 
+      pom.style.display = 'none';
+      document.body.appendChild(pom);
 
-          document.body.removeChild(pom); 
-        };
+      pom.click();
 
-        function addTextTXT() 
-        { 
-            document.addtext.name.value = document.addtext.name.value + ".txt" 
-        } 
+      document.body.removeChild(pom);
+    }
     </script>
+
 
     {% endif %}
     
