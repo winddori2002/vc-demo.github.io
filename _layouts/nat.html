@@ -1,8 +1,55 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form * {
+  display: block;
+  margin: 10px;
+}
+</style>
+<script language="Javascript" >
+function download() {
+  var filename = window.document.myform.docname.value;
+  var name =  window.document.myform.name.value;
+  var text =  window.document.myform.text.value;
+  var problem =  window.document.myform.problem.value;
+  
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+	"Your Name: " + encodeURIComponent(name) + "\n\n" +
+	"Problem: " + encodeURIComponent(problem) + "\n\n" +
+	encodeURIComponent(text)); 
 
-<div style="width: 120%;">
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
+</head>
+<body>
+<form name="myform" method="post" >
+  <input type="text" id="docname" value="test.txt" />
+  <input type="text" id="name" placeholder="Your Name" />
+  <div style="display:unblock">
+    Option 1 <input type="radio" value="Option 1" onclick="getElementById('problem').value=this.value; getElementById('problem').show()" style="display:inline" />
+    Option 2 <input type="radio" value="Option 2" onclick="getElementById('problem').value=this.value;" style="display:inline" />
+    <input type="text" id="problem" />
+  </div>
+  <textarea rows=3 cols=50 id="text" />Please type in this box. 
+When you click the Download button, the contents of this box will be downloaded to your machine at the location you specify. Pretty nifty. </textarea>
+  
+  <input id="download_btn" type="submit" class="btn" style="width: 125px" onClick="download();" />
+  
+</form>
+</body>
+</html>
+
+<!-- <div style="width: 120%;">
   
   <h2><strong>Naturalness Evaluation</h2>
   
@@ -46,4 +93,4 @@ layout: default
   </body>
 
     
-</div>
+</div> -->
