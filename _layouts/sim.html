@@ -9,8 +9,14 @@ function download() {
   var pom = document.createElement('a');
 	
   const form = window.document.getElementById('form-id');
-
-  var id_list = ['docname','name', 'ex1']
+  var id_list = ['docname','name', 'ex1', 'ex2', 'ex3', 'ex4', 'ex5', 'ex6', 'ex7', 'ex8', 
+		 'ex9', 'ex10', 'ex11', 'ex12', 'ex13', 'ex14', 'ex15', 'ex16', 'ex17', 'ex18', 
+		 'ex19', 'ex20', 'ex21', 'ex22', 'ex23', 'ex24', 'ex25', 'ex26', 'ex27', 'ex28', 
+		 'ex29', 'ex30', 'ex31', 'ex32', 'ex33', 'ex34', 'ex35', 'ex36', 'ex37', 'ex38', 
+		 'ex39', 'ex40', 'ex41', 'ex42', 'ex43', 'ex44', 'ex45', 'ex46', 'ex47', 'ex48', 
+		 'ex49', 'ex50', 'ex51', 'ex52', 'ex53', 'ex54', 'ex55', 'ex56', 'ex57', 'ex58', 
+		 'ex59', 'ex60', 'ex61', 'ex62', 'ex63', 'ex64', 'ex65', 'ex66', 'ex67', 'ex68', 
+		 'ex69', 'ex70', 'ex71', 'ex72', 'ex73', 'ex74', 'ex75', 'ex76', 'ex77', 'ex78', 'ex79', 'ex80']
   var arr = [];
   for (i=0; i<id_list.length; i++){
 
@@ -47,7 +53,7 @@ function download() {
     <br>
     Name: <input type="text" id="name" placeholder="Write your name"/>
 	  
-	<h4><strong> 1. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech.:</strong></h4>
+<!-- 	<h4><strong> 1. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech.:</strong></h4>
 	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
     
     
@@ -78,8 +84,2327 @@ function download() {
 		4 <input type="radio" value="4" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
 		5 <input type="radio" value="5" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
 		<input type="text" id="ex1" />
-	</div>
+	</div> -->
 
+	<h4><strong> 1. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex1_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex1_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex1').value=this.value; getElementById('ex1').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex1" />
+	</div>
+	<br>
+	<h4><strong> 2. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex2_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex2_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex2').value=this.value; getElementById('ex2').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex2').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex2" />
+	</div>
+	<br>
+	<h4><strong> 3. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex3_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex3_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex3').value=this.value; getElementById('ex3').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex3').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex3" />
+	</div>
+	<br>
+	<h4><strong> 4. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex4_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex4_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex4').value=this.value; getElementById('ex4').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex4').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex4').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex4').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex4').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex4" />
+	</div>
+	<br>
+	<h4><strong> 5. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex5_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex5_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex5').value=this.value; getElementById('ex5').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex5').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex5').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex5').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex5').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex5" />
+	</div>
+	<br>
+	<h4><strong> 6. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex6_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex6_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex6').value=this.value; getElementById('ex6').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex6').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex6').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex6').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex6').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex6" />
+	</div>
+	<br>
+	<h4><strong> 7. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex7_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex7_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex7').value=this.value; getElementById('ex7').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex7').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex7').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex7').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex7').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex7" />
+	</div>
+	<br>
+	<h4><strong> 8. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex8_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex8_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex8').value=this.value; getElementById('ex8').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex8').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex8').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex8').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex8').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex8" />
+	</div>
+	<br>
+	<h4><strong> 9. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex9_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex9_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex9').value=this.value; getElementById('ex9').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex9').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex9').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex9').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex9').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex9" />
+	</div>
+	<br>
+	<h4><strong> 10. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex10_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex10_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex10').value=this.value; getElementById('ex10').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex10').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex10').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex10').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex10').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex10" />
+	</div>
+	<br>
+	<h4><strong> 11. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex11_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex11_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex11').value=this.value; getElementById('ex11').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex11').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex11').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex11').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex11').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex11" />
+	</div>
+	<br>
+	<h4><strong> 12. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex12_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex12_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex12').value=this.value; getElementById('ex12').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex12').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex12').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex12').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex12').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex12" />
+	</div>
+	<br>
+	<h4><strong> 13. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex13_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex13_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex13').value=this.value; getElementById('ex13').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex13').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex13').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex13').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex13').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex13" />
+	</div>
+	<br>
+	<h4><strong> 14. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex14_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex14_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex14').value=this.value; getElementById('ex14').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex14').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex14').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex14').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex14').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex14" />
+	</div>
+	<br>
+	<h4><strong> 15. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex15_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex15_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex15').value=this.value; getElementById('ex15').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex15').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex15').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex15').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex15').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex15" />
+	</div>
+	<br>
+	<h4><strong> 16. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex16_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex16_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex16').value=this.value; getElementById('ex16').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex16').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex16').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex16').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex16').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex16" />
+	</div>
+	<br>
+	<h4><strong> 17. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex17_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex17_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex17').value=this.value; getElementById('ex17').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex17').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex17').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex17').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex17').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex17" />
+	</div>
+	<br>
+	<h4><strong> 18. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex18_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex18_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex18').value=this.value; getElementById('ex18').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex18').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex18').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex18').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex18').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex18" />
+	</div>
+	<br>
+	<h4><strong> 19. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex19_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex19_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex19').value=this.value; getElementById('ex19').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex19').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex19').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex19').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex19').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex19" />
+	</div>
+	<br>
+	<h4><strong> 20. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex20_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex20_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex20').value=this.value; getElementById('ex20').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex20').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex20').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex20').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex20').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex20" />
+	</div>
+	<br>
+	<h4><strong> 21. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex21_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex21_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex21').value=this.value; getElementById('ex21').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex21').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex21').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex21').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex21').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex21" />
+	</div>
+	<br>
+	<h4><strong> 22. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex22_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex22_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex22').value=this.value; getElementById('ex22').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex22').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex22').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex22').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex22').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex22" />
+	</div>
+	<br>
+	<h4><strong> 23. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex23_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex23_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex23').value=this.value; getElementById('ex23').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex23').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex23').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex23').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex23').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex23" />
+	</div>
+	<br>
+	<h4><strong> 24. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex24_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex24_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex24').value=this.value; getElementById('ex24').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex24').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex24').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex24').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex24').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex24" />
+	</div>
+	<br>
+	<h4><strong> 25. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex25_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex25_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex25').value=this.value; getElementById('ex25').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex25').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex25').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex25').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex25').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex25" />
+	</div>
+	<br>
+	<h4><strong> 26. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex26_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex26_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex26').value=this.value; getElementById('ex26').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex26').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex26').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex26').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex26').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex26" />
+	</div>
+	<br>
+	<h4><strong> 27. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex27_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex27_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex27').value=this.value; getElementById('ex27').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex27').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex27').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex27').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex27').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex27" />
+	</div>
+	<br>
+	<h4><strong> 28. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex28_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex28_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex28').value=this.value; getElementById('ex28').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex28').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex28').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex28').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex28').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex28" />
+	</div>
+	<br>
+	<h4><strong> 29. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex29_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex29_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex29').value=this.value; getElementById('ex29').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex29').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex29').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex29').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex29').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex29" />
+	</div>
+	<br>
+	<h4><strong> 30. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex30_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex30_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex30').value=this.value; getElementById('ex30').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex30').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex30').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex30').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex30').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex30" />
+	</div>
+	<br>
+	<h4><strong> 31. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex31_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex31_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex31').value=this.value; getElementById('ex31').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex31').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex31').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex31').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex31').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex31" />
+	</div>
+	<br>
+	<h4><strong> 32. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex32_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex32_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex32').value=this.value; getElementById('ex32').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex32').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex32').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex32').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex32').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex32" />
+	</div>
+	<br>
+	<h4><strong> 33. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex33_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex33_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex33').value=this.value; getElementById('ex33').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex33').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex33').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex33').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex33').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex33" />
+	</div>
+	<br>
+	<h4><strong> 34. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex34_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex34_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex34').value=this.value; getElementById('ex34').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex34').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex34').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex34').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex34').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex34" />
+	</div>
+	<br>
+	<h4><strong> 35. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex35_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex35_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex35').value=this.value; getElementById('ex35').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex35').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex35').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex35').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex35').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex35" />
+	</div>
+	<br>
+	<h4><strong> 36. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex36_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex36_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex36').value=this.value; getElementById('ex36').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex36').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex36').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex36').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex36').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex36" />
+	</div>
+	<br>
+	<h4><strong> 37. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex37_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex37_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex37').value=this.value; getElementById('ex37').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex37').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex37').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex37').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex37').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex37" />
+	</div>
+	<br>
+	<h4><strong> 38. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex38_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex38_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex38').value=this.value; getElementById('ex38').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex38').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex38').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex38').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex38').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex38" />
+	</div>
+	<br>
+	<h4><strong> 39. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex39_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex39_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex39').value=this.value; getElementById('ex39').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex39').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex39').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex39').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex39').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex39" />
+	</div>
+	<br>
+	<h4><strong> 40. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex40_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex40_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex40').value=this.value; getElementById('ex40').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex40').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex40').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex40').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex40').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex40" />
+	</div>
+	<br>
+	<h4><strong> 41. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex41_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex41_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex41').value=this.value; getElementById('ex41').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex41').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex41').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex41').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex41').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex41" />
+	</div>
+	<br>
+	<h4><strong> 42. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex42_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex42_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex42').value=this.value; getElementById('ex42').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex42').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex42').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex42').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex42').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex42" />
+	</div>
+	<br>
+	<h4><strong> 43. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex43_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex43_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex43').value=this.value; getElementById('ex43').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex43').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex43').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex43').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex43').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex43" />
+	</div>
+	<br>
+	<h4><strong> 44. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex44_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex44_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex44').value=this.value; getElementById('ex44').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex44').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex44').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex44').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex44').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex44" />
+	</div>
+	<br>
+	<h4><strong> 45. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex45_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex45_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex45').value=this.value; getElementById('ex45').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex45').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex45').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex45').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex45').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex45" />
+	</div>
+	<br>
+	<h4><strong> 46. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex46_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex46_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex46').value=this.value; getElementById('ex46').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex46').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex46').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex46').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex46').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex46" />
+	</div>
+	<br>
+	<h4><strong> 47. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex47_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex47_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex47').value=this.value; getElementById('ex47').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex47').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex47').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex47').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex47').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex47" />
+	</div>
+	<br>
+	<h4><strong> 48. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex48_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex48_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex48').value=this.value; getElementById('ex48').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex48').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex48').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex48').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex48').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex48" />
+	</div>
+	<br>
+	<h4><strong> 49. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex49_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex49_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex49').value=this.value; getElementById('ex49').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex49').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex49').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex49').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex49').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex49" />
+	</div>
+	<br>
+	<h4><strong> 50. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex50_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex50_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex50').value=this.value; getElementById('ex50').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex50').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex50').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex50').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex50').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex50" />
+	</div>
+	<br>
+	<h4><strong> 51. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex51_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex51_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex51').value=this.value; getElementById('ex51').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex51').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex51').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex51').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex51').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex51" />
+	</div>
+	<br>
+	<h4><strong> 52. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex52_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex52_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex52').value=this.value; getElementById('ex52').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex52').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex52').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex52').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex52').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex52" />
+	</div>
+	<br>
+	<h4><strong> 53. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex53_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex53_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex53').value=this.value; getElementById('ex53').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex53').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex53').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex53').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex53').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex53" />
+	</div>
+	<br>
+	<h4><strong> 54. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex54_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex54_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex54').value=this.value; getElementById('ex54').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex54').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex54').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex54').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex54').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex54" />
+	</div>
+	<br>
+	<h4><strong> 55. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex55_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex55_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex55').value=this.value; getElementById('ex55').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex55').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex55').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex55').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex55').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex55" />
+	</div>
+	<br>
+	<h4><strong> 56. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex56_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex56_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex56').value=this.value; getElementById('ex56').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex56').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex56').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex56').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex56').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex56" />
+	</div>
+	<br>
+	<h4><strong> 57. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex57_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex57_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex57').value=this.value; getElementById('ex57').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex57').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex57').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex57').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex57').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex57" />
+	</div>
+	<br>
+	<h4><strong> 58. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex58_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex58_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex58').value=this.value; getElementById('ex58').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex58').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex58').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex58').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex58').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex58" />
+	</div>
+	<br>
+	<h4><strong> 59. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex59_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex59_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex59').value=this.value; getElementById('ex59').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex59').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex59').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex59').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex59').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex59" />
+	</div>
+	<br>
+	<h4><strong> 60. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex60_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex60_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex60').value=this.value; getElementById('ex60').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex60').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex60').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex60').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex60').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex60" />
+	</div>
+	<br>
+	<h4><strong> 61. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex61_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex61_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex61').value=this.value; getElementById('ex61').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex61').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex61').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex61').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex61').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex61" />
+	</div>
+	<br>
+	<h4><strong> 62. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex62_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex62_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex62').value=this.value; getElementById('ex62').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex62').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex62').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex62').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex62').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex62" />
+	</div>
+	<br>
+	<h4><strong> 63. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex63_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex63_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex63').value=this.value; getElementById('ex63').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex63').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex63').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex63').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex63').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex63" />
+	</div>
+	<br>
+	<h4><strong> 64. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex64_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex64_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex64').value=this.value; getElementById('ex64').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex64').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex64').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex64').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex64').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex64" />
+	</div>
+	<br>
+	<h4><strong> 65. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex65_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex65_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex65').value=this.value; getElementById('ex65').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex65').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex65').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex65').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex65').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex65" />
+	</div>
+	<br>
+	<h4><strong> 66. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex66_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex66_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex66').value=this.value; getElementById('ex66').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex66').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex66').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex66').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex66').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex66" />
+	</div>
+	<br>
+	<h4><strong> 67. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex67_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex67_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex67').value=this.value; getElementById('ex67').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex67').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex67').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex67').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex67').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex67" />
+	</div>
+	<br>
+	<h4><strong> 68. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex68_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex68_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex68').value=this.value; getElementById('ex68').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex68').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex68').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex68').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex68').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex68" />
+	</div>
+	<br>
+	<h4><strong> 69. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex69_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex69_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex69').value=this.value; getElementById('ex69').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex69').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex69').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex69').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex69').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex69" />
+	</div>
+	<br>
+	<h4><strong> 70. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex70_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex70_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex70').value=this.value; getElementById('ex70').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex70').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex70').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex70').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex70').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex70" />
+	</div>
+	<br>
+	<h4><strong> 71. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex71_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex71_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex71').value=this.value; getElementById('ex71').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex71').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex71').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex71').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex71').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex71" />
+	</div>
+	<br>
+	<h4><strong> 72. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex72_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex72_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex72').value=this.value; getElementById('ex72').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex72').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex72').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex72').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex72').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex72" />
+	</div>
+	<br>
+	<h4><strong> 73. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex73_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex73_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex73').value=this.value; getElementById('ex73').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex73').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex73').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex73').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex73').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex73" />
+	</div>
+	<br>
+	<h4><strong> 74. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex74_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex74_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex74').value=this.value; getElementById('ex74').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex74').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex74').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex74').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex74').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex74" />
+	</div>
+	<br>
+	<h4><strong> 75. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex75_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex75_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex75').value=this.value; getElementById('ex75').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex75').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex75').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex75').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex75').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex75" />
+	</div>
+	<br>
+	<h4><strong> 76. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex76_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex76_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex76').value=this.value; getElementById('ex76').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex76').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex76').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex76').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex76').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex76" />
+	</div>
+	<br>
+	<h4><strong> 77. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex77_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex77_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex77').value=this.value; getElementById('ex77').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex77').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex77').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex77').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex77').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex77" />
+	</div>
+	<br>
+	<h4><strong> 78. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex78_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex78_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex78').value=this.value; getElementById('ex78').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex78').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex78').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex78').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex78').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex78" />
+	</div>
+	<br>
+	<h4><strong> 79. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex79_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex79_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex79').value=this.value; getElementById('ex79').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex79').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex79').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex79').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex79').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex79" />
+	</div>
+	<br>
+	<h4><strong> 80. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech:</h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+	<table border="1">
+	<tr>
+		<th align="center">Target</th>
+		<th align="center">Conversion</th>
+	</tr>
+	<tr>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex80_trg.wav">
+		</audio>
+		</td>
+		<td align="center">
+		<audio controls preload="none">
+			<source src="./eval_samples2/ex80_cnv.wav">
+		</audio>
+		</td>
+	</tr>
+	</table>
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex80').value=this.value; getElementById('ex80').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex80').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex80').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex80').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex80').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex80" />
+	</div>
     
     <br>
     <input id="download_btn" type="submit" class="btn" style="overflow:hidden;padding: 5px 5px; border-radius: 3px;font-size: 10.5pt; width:250px ; background-color: #121111; font-weight: bold;" onClick="download();" value="Download"/ >
