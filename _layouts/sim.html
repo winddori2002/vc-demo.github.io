@@ -1,10 +1,92 @@
 ---
 layout: default
 ---
-<article>
 
-  <div>
-    {{ content }}
-  </div>
+	
+<script language="Javascript" >
+function download() {
+  var filename = window.document.myform.docname.value;
+  var pom = document.createElement('a');
+	
+  const form = window.document.getElementById('form-id');
 
-</article>
+  var id_list = ['docname','name', 'ex1']
+  var arr = [];
+  for (i=0; i<id_list.length; i++){
+
+	arr.push([id_list[i], form[id_list[i]].value])
+  }
+  
+  
+ 
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + arr);
+
+
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
+
+<div style="width: 120%;">
+  
+  <h2><strong>Similarity Evaluation</strong></h2>
+  
+  <body>
+    Below, we provide some examples for speech similarity evaluation. <br>
+    Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech.
+    <br>
+  
+  <form id="form-id" name="myform" method="post" >
+    Filename: <input type="text" id="docname" value="Test_similarity.txt" /> 
+    <br>
+    Name: <input type="text" id="name" placeholder="Write your name"/>
+	  
+	<h4><strong> 1. Listen the sample and rate a score from 1 to 5 based on how the converted speech is similar to target speech.:</strong></h4>
+	<h4>(1: Very different 2: Different 3: Fair 4: Similar 5: Very similar)</h4>
+    
+    
+  <table border="1">
+      <tr>
+          <th align="center">Target</th>
+          <th align="center">Conversion</th>
+      </tr>
+    
+      <tr>
+          <td align="center">
+            <audio controls preload="none">
+              <source src="./eval_samples/ex1.wav">
+            </audio>
+          </td>
+          <td align="center">
+            <audio controls preload="none">
+              <source src="./eval_samples/ex1.wav">
+            </audio>
+          </td>
+       </tr>
+  </table>
+
+	<div style="display:unblock">
+		1 <input type="radio" value="1" onclick="getElementById('ex1').value=this.value; getElementById('ex1').show()" style="display:inline" name="score" />
+		2 <input type="radio" value="2" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		3 <input type="radio" value="3" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		4 <input type="radio" value="4" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		5 <input type="radio" value="5" onclick="getElementById('ex1').value=this.value;" style="display:inline" name="score" />
+		<input type="text" id="ex1" />
+	</div>
+
+    
+    <br>
+    <input id="download_btn" type="submit" class="btn" style="overflow:hidden;padding: 5px 5px; border-radius: 3px;font-size: 10.5pt; width:250px ; background-color: #121111; font-weight: bold;" onClick="download();" value="Download"/ >
+
+  </form> 
+  
+  </body>
+  
+
+</div>
