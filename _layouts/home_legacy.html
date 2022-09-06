@@ -1,0 +1,619 @@
+<!-- ---
+layout: default
+---
+
+<div style="width: 120%;">
+  
+  <h2><strong>Voice Conversion Results for Comparison</h2>
+  
+  <body>
+      Below, we provide some voice conversion examples depending on scenarios and speakers. <br>
+      You can see audio examples of each scenario by clicking the scenario button.
+   
+  <br>
+  <h3><strong>Seen to Seen Scenarios (S2S):</h3>
+  <h4><strong>Source and target speakers are seen during training</h4>
+  <ul>
+      <li>Male to Male</li>
+      <li>Male to Female</li>
+      <li>Female to Female</li>
+      <li>Female to Male</li>
+  </ul> 
+  
+  <summary><strong>Scenario 1. S2S Male to Male:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p279
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p232
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p279_043_mic1_p232_413_mic1/s2s_m2m_p279_043_mic1_p232_413_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p298
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p281
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2m_p298_374_mic1_p281_244_mic1/s2s_m2m_p298_374_mic1_p281_244_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+    
+  <summary><strong>Scenario 2. S2S Male to Female:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p263
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p248
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p263_316_mic1_p248_328_mic1/s2s_m2f_p263_316_mic1_p248_328_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p363
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p318
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_m2f_p363_011_mic1_p318_196_mic1/s2s_m2f_p363_011_mic1_p318_196_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+    
+  <summary><strong>Scenario 3. S2S Female to Female:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p265
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p333
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p265_294_mic1_p333_263_mic1/s2s_f2f_p265_294_mic1_p333_263_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p307
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p234
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td> AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2f_p307_367_mic1_p234_160_mic1/s2s_f2f_p307_367_mic1_p234_160_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+
+  <summary><strong>Scenario 4. S2S Female to Male:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p288
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p278
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p288_080_mic1_p278_327_mic1/s2s_f2m_p288_080_mic1_p278_327_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p310
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p298
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/s2s_f2m_p310_186_mic1_p298_127_mic1/s2s_f2m_p310_186_mic1_p298_127_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  <br>
+
+  <h3><strong>Unseen to Unseen Scenarios (U2U):</h3>
+  <h4><strong>Source and target speakers are unseen during training</h4>
+  <ul>
+      <li>Male to Male</li>
+      <li>Male to Female</li>
+      <li>Female to Female</li>
+      <li>Female to Male</li>
+  </ul> 
+  
+
+  <summary><strong>Scenario 1. U2U Male to Male:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p245
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p285
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p245_095_mic1_p285_368_mic1/u2u_m2m_p245_095_mic1_p285_368_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p271
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p245
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2m_p271_008_mic1_p245_203_mic1/u2u_m2m_p271_008_mic1_p245_203_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+    
+  <summary><strong>Scenario 2. U2U Male to Female:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p245
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p249
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p245_327_mic1_p249_273_mic1/u2u_m2f_p245_327_mic1_p249_273_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p271
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p249
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_m2f_p271_205_mic1_p249_341_mic1/u2u_m2f_p271_205_mic1_p249_341_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+    
+  <summary><strong>Scenario 3. U2U Female to Female:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p277
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p282
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p277_333_mic1_p282_007_mic1/u2u_f2f_p277_333_mic1_p282_007_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p343
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p282
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2f_p343_162_mic1_p282_343_mic1/u2u_f2f_p343_162_mic1_p282_343_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+    
+  <summary><strong>Scenario 4. U2U Female to Male:</summary>
+  <table class="table">
+      <thead>
+          <tr>
+              <th width="25%" scope="col">Source</th>
+              <th width="25%" scope="col">Target</th>
+              <th width="25%" scope="col">Conversion</th>
+          </tr>
+      </thead>
+      <tbody>
+
+          <tr>
+              <td>p330
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p285
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p330_345_mic1_p285_250_mic1/u2u_f2m_p330_345_mic1_p285_250_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+
+          <tr>
+              <td>p335
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_src.wav">
+                  </audio>
+              </td>
+              <td>p245
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_trg.wav">
+                  </audio>
+              </td>
+              <td>AdaIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_adain.wav">
+                  </audio> AGAIN-VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_again.wav">
+                  </audio>
+              </td>
+              <td>S2VC
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_s2vc.wav">
+                  </audio> Proposed
+                  <audio controls preload="none">
+                      <source src="./samples/u2u_f2m_p335_314_mic1_p245_094_mic1/u2u_f2m_p335_314_mic1_p245_094_mic1_triaan.wav">
+                  </audio>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    
+  <br>
+  Thanks for your interest!
+  </body>
+  
+</div> -->
