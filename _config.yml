@@ -1,10 +1,5 @@
 title: TriAAN-VC DEMO
-description: Voice Conversion (VC) must be achieved while maintaining the content of the source speech and representing the characteristics of the target speaker.\\
-The existing methods do not simultaneously satisfy the above two aspects of VC, and their conversion outputs suffer from a trade-off problem between maintaining source contents and target characteristics.\\
-In this study, we propose Triple Adaptive Attention Normalization VC (TriAAN-VC), comprising an encoder-decoder and an attention-based adaptive normalization block, that can be applied to non-parallel any-to-any VC.\\ 
-The proposed adaptive normalization block extracts target speaker representations and achieves conversion while minimizing the loss of the source content with siamese loss.\\
-We evaluated TriAAN-VC on the VCTK dataset in terms of the maintenance of the source content and target speaker similarity.\\
-Experimental results for one-shot VC suggest that TriAAN-VC achieves state-of-the-art performance while mitigating the trade-off problem encountered in the existing VC methods.
+description: Here, we provide voice conversion results.
 show_downloads: false
 
 #baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
