@@ -1,5 +1,5 @@
-title: TriAAN-VC DEMO
-description: Here, we provide voice conversion results.
+title: TriAAN-VC
+description: Triple Adaptive Attention Normalization for any-to-any Voice Conversion
 show_downloads: false
 
 #baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
